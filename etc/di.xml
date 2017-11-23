@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @copyright Copyright © 2017 Php4u Marcin Szterling. All rights reserved.
+ * @author    marcin@php4u.co.uk
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+   <preference for="Php4u\WbTest\Api\ProductRepositoryInterface"
+               type="Php4u\WbTest\Model\ProductRepository"/>
+   <preference for="Php4u\WbTest\Api\Data\ConfigurableOptionsInterface"
+               type="Php4u\WbTest\Model\ConfigurableOptions" />
+   <preference for="Php4u\WbTest\Api\Data\ConfigurableProductsInfoInterface"
+               type="Php4u\WbTest\Model\ConfigurableProductsInfo" />
+</config>
