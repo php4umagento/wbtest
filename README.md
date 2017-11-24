@@ -51,6 +51,8 @@ Response:
 }
 ```
 
+Sample response can be found [here](https://cdn.rawgit.com/php4umagento/wbtest/c73e9d59/doc/extraProductInformation.html)
+
 ## Swagger documentation
 
 Swagger documentation is accessible via url http(s)://{{magento_url}}/swagger#!/php4uWbTestProductRepositoryV1/php4uWbTestProductRepositoryV1GetGet
