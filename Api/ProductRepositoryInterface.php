@@ -23,5 +23,4 @@ interface ProductRepositoryInterface
      * @throws \Magento\Framework\Exception\NoSuchEntityException
      */
     public function get($sku, $editMode = false, $storeId = null, $forceReload = false);
-
 }

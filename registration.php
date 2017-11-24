@@ -4,4 +4,3 @@
     'Php4u_WbTest',
     __DIR__
 );
-

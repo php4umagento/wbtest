@@ -30,12 +30,22 @@ class ProductRepositoryTest extends \Magento\TestFramework\TestCase\WebapiAbstra
             ],
         ];
 
-
         $actual = $this->_webApiCall($serviceInfo, []);
         $this->assertArrayHasKey('extension_attributes', $actual, 'Product has no extension attributes');
-        $this->assertArrayHasKey('configurable_products_info', $actual['extension_attributes'], 'configurable_products_info is not present in extension attributes');
-        $this->assertNotEmpty($actual['extension_attributes']['configurable_products_info'], 'Configurable product has no simple products');
-        $this->assertCount(2, $actual['extension_attributes']['configurable_products_info'], 'Configurable product should have only 2 simple products');
+        $this->assertArrayHasKey(
+            'configurable_products_info',
+            $actual['extension_attributes'],
+            'configurable_products_info is not present in extension attributes'
+        );
+        $this->assertNotEmpty(
+            $actual['extension_attributes']['configurable_products_info'],
+            'Configurable product has no simple products'
+        );
+        $this->assertCount(
+            2,
+            $actual['extension_attributes']['configurable_products_info'],
+            'Configurable product should have only 2 simple products'
+        );
 
         $configurableProductInfo = $actual['extension_attributes']['configurable_products_info'];
         $this->remove($configurableProductInfo, ['value', 'id']);
